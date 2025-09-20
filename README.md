@@ -4,7 +4,17 @@ Este repositorio contiene un docker con PHP y MySQL, junto con el desarrollo par
 
 ## Requerimientos
 
-Los participantes deberán tener una PC con al menos git para partcipar y utilizar el entorno de desarrollo, se recomienda tener Ubuntu instalado.
+* Ubuntu (linux, al menos en una maquina virtual).
+* Docker
+* Git
+* Una cuenta en Github
+* Docker-compose
+
+## Comandos para instalar Git, Docker y Docker-compose
+
+* sudo apt install git
+* sudo apt install docker.io
+* sudo apt install docker-compose
 
 ## Configuración del ambiente de desarrollo
 

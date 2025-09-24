@@ -1,0 +1,82 @@
+/* Estilos para el wrapper del select */
+.select-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.select-wrapper::after {
+    content: "";
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237c5cff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Estilos para el select */
+.select-wrapper select {
+    width: 100%;
+    padding: 12px 14px;
+    padding-right: 40px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,.25);
+    background: rgba(0,0,0,.25);
+    color: var(--white);
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+    
+    /* Remover estilos por defecto */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Estados del select */
+.select-wrapper select:hover {
+    border-color: rgba(124, 92, 255, 0.5);
+    background: rgba(0,0,0,.35);
+}
+
+.select-wrapper select:focus {
+    border-color: var(--primary);
+    background: rgba(0,0,0,.4);
+    box-shadow: 0 0 0 2px rgba(124, 92, 255, 0.2);
+}
+
+/* Placeholder option */
+.select-wrapper select option[value=""] {
+    color: var(--muted);
+}
+
+/* Options normales */
+.select-wrapper select option {
+    background: var(--card);
+    color: var(--white);
+    padding: 8px 12px;
+}
+
+/* Para navegadores específicos */
+@-moz-document url-prefix() {
+    .select-wrapper select {
+        background-color: rgba(0,0,0,.25);
+        color: var(--white);
+    }
+    
+    .select-wrapper select option {
+        background: var(--card);
+        color: var(--white);
+    }
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .select-wrapper select {
+        padding: 10px 12px;
+        font-size: 16px; /* Evitar zoom en iOS */
+    }
+}

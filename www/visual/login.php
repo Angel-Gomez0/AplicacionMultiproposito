@@ -9,7 +9,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Inicio de sesión</title>
-  <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="assets/css/login.css" />
 </head>
 <body>
   <main class="container">
@@ -51,19 +51,19 @@
         <!-- Enlace a registro -->
         <p class="hint" style="text-align:center; margin-top:12px;">
           ¿No tienes cuenta? 
-          <a href="register.html" style="color:#9bd0ff; text-decoration: none;">Regístrate</a>
+          <a href="register.php" style="color:#9bd0ff; text-decoration: none;">Regístrate</a>
         </p>
 
         <!-- Enlace a restablecimiento (página estática) -->
         <p class="hint" style="text-align:center; margin-top:6px;">
-          ¿Olvidaste tu contraseña? <a href="restablecer.html" style="color:#9bd0ff; text-decoration: none;">Restablecer</a>
+          ¿Olvidaste tu contraseña? <a href="restablecer.php" style="color:#9bd0ff; text-decoration: none;">Restablecer</a>
         </p>
       </form>
     </section>
   </main>
 
-  <script src="js/password-toggle.js"></script>
-  <script src="js/form-validation.js"></script>
+  <script src="assets/js/password-toggle.js"></script>
+  <script src="assets/js/form-validation.js"></script>
   <script>
     // Inicializar validaciones si es necesario
     // setupLoginValidation();

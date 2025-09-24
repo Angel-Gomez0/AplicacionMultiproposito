@@ -10,8 +10,8 @@ $gendersParsed = json_encode((new Genders())->getGenders());
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Registro de usuario</title>
-  <link rel="stylesheet" href="css/register.css" />
-  <link rel="stylesheet" href="css/select.css" />
+  <link rel="stylesheet" href="assets/css/register.css" />
+  <link rel="stylesheet" href="assets/css/select.css" />
 </head>
 
 <body>
@@ -92,8 +92,8 @@ $gendersParsed = json_encode((new Genders())->getGenders());
     </section>
   </main>
 
-  <script src="js/password-toggle.js"></script>
-  <script src="js/form-validation.js"></script>
+  <script src="assets/js/password-toggle.js"></script>
+  <script src="assets/js/form-validation.js"></script>
   <script>
     // Si necesitas inicializar algo adicional, puedes hacerlo aquí
     // setupRegistrationValidation();

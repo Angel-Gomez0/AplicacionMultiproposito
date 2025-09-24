@@ -22,7 +22,7 @@
         <br>
         <div class="actions">
           <button class="btn-primary" type="submit">Enviar enlace de restablecimiento</button>
-          <a class="btn-secondary" href="login.html" style="display:inline-block; text-decoration:none; line-height:38px; padding:0 16px;">Volver a iniciar sesión</a>
+          <a class="btn-secondary" href="login.php" style="display:inline-block; text-decoration:none; line-height:38px; padding:0 16px;">Volver a iniciar sesión</a>
         </div>
       </form>
     </section>
